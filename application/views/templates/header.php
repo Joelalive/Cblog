@@ -23,10 +23,14 @@
 		      <li class="nav-item">
 		        <a class="nav-link" href="<?= base_url() ?>posts">Blog</a>
 		      </li>
-		    </ul>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a class="btn btn-success" href="<?= base_url() ?>posts/create">Create Post</a>
+				</li>
+			</ul>
 		  </div>
 		</nav>
 
-	<main>
 	<div class="container pt-4">
 
