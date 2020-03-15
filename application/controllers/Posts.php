@@ -30,9 +30,10 @@
 
 				$data['title'] = 'Create Post';
 
-				$categories = $this->post_model->get_categories();
+				$data['categories'] = $this->post_model->get_categories();
 
 				$this->form_validation->set_rules('title', 'Title', 'required');
+				$this->form_validation->set_rules('category_id', 'Category', 'required');
 				$this->form_validation->set_rules('body', 'Body', 'required');
 
 				if($this->form_validation->run() === FALSE){
@@ -54,6 +55,8 @@
 			public function edit($slug){
 
 				$data['title'] = 'Edit post';
+
+				$data['categories'] = $this->post_model->get_categories();
 
 				$data['post'] = $this->post_model->get_posts($slug);
 
