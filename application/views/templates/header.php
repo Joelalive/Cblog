@@ -2,7 +2,7 @@
 	<head>
 		<title>Cblog</title>
 		<link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/flatly/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="<?= base_url() ?>/assets/css/style.css">
+		<link rel="stylesheet" type="text/css" href="<?= base_url() ?>assets/css/style.css">
 	</head>
 	<body>
 

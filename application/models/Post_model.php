@@ -18,14 +18,15 @@
 			return $query->row_array();
 		}
 
-		public function create_post(){
+		public function create_post($post_image){
 			$slug = url_title($this->input->post('title'));
 
 			$data = array(
 				'title' => $this->input->post('title'),
 				'category_id' => $this->input->post('category_id'),
 				'slug' => $slug,
-				'body' => $this->input->post('body')
+				'body' => $this->input->post('body'),
+				'post_image' => $post_image
 			);
 
 			return $this->db->insert('posts', $data);
