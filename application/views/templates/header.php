@@ -14,20 +14,14 @@
 
 		  <div class="collapse navbar-collapse" id="navbarColor03">
 		    <ul class="navbar-nav mr-auto">
-		      <li class="nav-item active">
-		        <a class="nav-link" href="<?= base_url() ?>">Home <span class="sr-only">(current)</span></a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="<?= base_url() ?>about">About</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="<?= base_url() ?>posts">Blog</a>
-		      </li>
+		      <li class="nav-item active"><a class="nav-link" href="<?= base_url() ?>">Home <span class="sr-only">(current)</span></a></li>
+		      <li class="nav-item"><a class="nav-link" href="<?= base_url() ?>about">About</a></li>
+		      <li class="nav-item"><a class="nav-link" href="<?= base_url() ?>posts">Blog</a></li>
+		      <li class="nav-item"><a class="nav-link" href="<?= base_url() ?>categories">Categories</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
-				<li>
-					<a class="btn btn-success" href="<?= base_url() ?>posts/create">Create Post</a>
-				</li>
+				<li><a class="btn btn-success mr-1" href="<?= base_url() ?>posts/create">Create Post</a></li>
+				<li><a class="btn btn-success" href="<?= base_url() ?>categories/create">Create Category</a></li>
 			</ul>
 		  </div>
 		</nav>
