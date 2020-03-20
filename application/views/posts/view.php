@@ -12,6 +12,21 @@
 </form>
 
 <a class="btn btn-info pull-left" href="<?php echo base_url();?>posts/edit/<?= $post['slug'];?>">Edit</a>
+<hr>
+<h3>Comments</h3>
+
+<?php if($comments): ?>
+ 
+ <?php foreach($comments as $comment): ?>
+	<div class="card bg-dark p-2">
+	<h5><?php echo $comment['body']; ?> [ by <strong class="text-default" ><?php echo $comment['name']; ?> </strong> ]</h5> 
+	</div>
+	</br>
+ <?php endforeach; ?>
+ 
+<?php else: ?>
+<p>No comments to display!.</p>
+<?php endif;?>
 
 <hr>
 <h3>Add Comment</h3>
